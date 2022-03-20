@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*! header start  */
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+header nav ul li a:hover {
+    color: #0ba2c0;
+ }
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .menu-button{
+    color: #0ba2c0;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    text-decoration: none;
+    transition: all .25s ease;
+ }
+
+ nav .menu .menu-button:hover{
+     color: white;
+     background-color: #0ba2c0;
+  }
+
+/*! header end  */
+
+/*! section start  */
+
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p{ 
+    font-size: 24px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.content .links{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.content .links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+}
+
+.content .links a:hover {
+    background: #0ba2c0;
+    color: #fff;
+    transition: all .25s ease;
+ }
+
+/*! section end  */
+
+/*! responsive start  */
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+
+    .menu .menu-button{
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+
+    .content h1{
+        font-size: 36px;
+     }
+
+     .content p{
+         font-size: 16px;
+     }
+
+     .content .links{
+         flex-direction: column;
+         align-items: center;
+         row-gap: 1rem;
+     }
+
+     .content .links a{
+         padding: 14px;
+         width: 90%;
+     }
+}
+/*! responsive end  */
